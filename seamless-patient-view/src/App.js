@@ -6,7 +6,7 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  const {state, dispatch} = useContext(Context);
+  const [state, dispatch] = useContext(Context);
 
   useEffect(() => {
     axios
@@ -23,7 +23,7 @@ function App() {
           }
         })
         debugger
-        dispatch({ type: 'SET_DATA', payload: [massagedData] }) 
+        dispatch({ type: 'SET_DATA', payload: massagedData }) 
       })
       .catch((err) => new Error('Error fetching performance trend data', err))
   }, [])

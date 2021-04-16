@@ -1,4 +1,5 @@
 const Reducer = (state, action) => {
+    debugger
     switch (action.type) {
         case 'SET_DATA': 
             debugger
