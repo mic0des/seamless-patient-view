@@ -24,7 +24,10 @@ const useStyles = makeStyles(theme => ({
         paddingTop: '0px',
         marginTop: '.2em',
         marginBottom: '-0.2em',
-        display: 'block'
+        display: 'block',
+        [theme.breakpoints.down('mdsm')]: {
+            fontSize: '1.8em'
+        }
     },
     icon: {
         height: '6.5em'
