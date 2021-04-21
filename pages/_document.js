@@ -1,5 +1,7 @@
 import Document, { Html, Head, NextScript, Main } from 'next/document'; 
 import { ServerStyleSheet } from 'styled-components';
+import { ThemeProvider } from '@material-ui/core/styles';
+import muiTheme from '../styles/muiTheme';
 
 export default class MyDocument extends Document {
     static getInitialProps({renderPage}) {

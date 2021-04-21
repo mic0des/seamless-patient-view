@@ -18,6 +18,17 @@ const useStyles = makeStyles(theme => ({
         verticalAlign: 'middle',
         fontWeight: '900',
         margin: '-0.3em 0 0.6em 0.2em'
+    },
+    root: {
+        [theme.breakpoints.down('xm')]: {
+            width: '82vw'
+        },
+        [theme.breakpoints.down('xs')]: {
+            width: '92vw'
+        },
+        [theme.breakpoints.down('xxs')]: {
+            width: '100vw'
+        }
     }
 }))
 
@@ -32,7 +43,7 @@ export default function Dashboard({ patients, averageAge, totalPediatric }) {
             </Head>
             <img src="/logo.png" alt="SeamlessMD"/><h1 className={classes.styledh1}>Patient Metrics Dashboard</h1>
             <h2>📊 Patients by Age Group</h2>
-            <Paper>
+            <Paper className={classes.root}>
                 <div className="App__charts">
                     <Histogram data={patients} xAccessor={ageAccessor} label="Age (Years)" />
                 </div>
