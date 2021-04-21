@@ -1,0 +1,22 @@
+{
+  "name": "with-mongodb",
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.11.3",
+    "d3": "^6.7.0",
+    "mongodb": "^3.5.9",
+    "next": "latest",
+    "nprogress": "^0.2.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "resize-observer-polyfill": "^1.5.1"
+  }
+}
