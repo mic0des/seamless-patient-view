@@ -19,7 +19,7 @@ const useStyles = makeStyles(theme => ({
         }
     },
     number: {
-        fontSize: '2.2em',
+        fontSize: '1.8em',
         width: '100%',
         paddingTop: '0px',
         marginTop: '.2em',
