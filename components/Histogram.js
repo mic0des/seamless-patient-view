@@ -87,10 +87,10 @@ const Histogram = ({ data, xAccessor, label }) => {
         />
       </Chart>
       { 
-        displayObject ? 
+        // displayObject ? 
         <Tooltip displayObj={displayObject}/> 
-         :
-        null
+        //  :
+        // null
       }
     </div>
 
