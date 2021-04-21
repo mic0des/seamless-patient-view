@@ -74,7 +74,7 @@ export async function getStaticProps() {
 
     const patients = await db 
         .collection("data")
-        .find({birthDate: {$gte : new Date("1952-01-01")}})
+        .find({birthDate: {$gte : new Date("1951-01-01")}})
         // .limit(500)
         .toArray(); 
 
