@@ -58,12 +58,12 @@ export default function BasicStats({ statObject }) {
                 <div className={classes.card}>
                     <div>
                         <Grid container spacing={3}>
-                            <Grid item sm={5}>
+                            <Grid item sm={6}>
                                 <b className={classes.number}>{statObject.total}</b>
                                 <br/>
                                 <span>Total Patients</span>
                             </Grid>
-                            <Grid item sm={6}>
+                            <Grid item sm={4}>
                                 <img className={classes.icon} src="/total.png" alt="Total"/>
                             </Grid>
                         </Grid>
