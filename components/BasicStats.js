@@ -30,7 +30,7 @@ const useStyles = makeStyles(theme => ({
         }
     },
     icon: {
-        height: '6.5em'
+        height: '5.5em'
     }
 }))
 
