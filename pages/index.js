@@ -7,7 +7,7 @@ import Histogram from "../components/Histogram";
 import DataTable from "../components/DataTable";
 import BasicStats from "../components/BasicStats";
 import Head from 'next/head';
-import { makeStyles } from '@material-ui/core';
+import { Container, makeStyles } from '@material-ui/core';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 
@@ -26,7 +26,7 @@ export default function Dashboard({ patients, averageAge, totalPediatric }) {
     const ageAccessor = d => d.age
 
     return (
-        <>
+        <Container maxWidth="lg">
             <Head>
                 <title>Seamless.md | Patient Metrics</title>
             </Head>
@@ -50,7 +50,7 @@ export default function Dashboard({ patients, averageAge, totalPediatric }) {
                     <BasicStats statObject={{total: formatNumber(patients.length), averageAge: averageAge, totalPediatric: formatNumber(totalPediatric)}}/>
                 </Grid>
             </Grid>
-        </>
+        </Container>
     )
 }
 
