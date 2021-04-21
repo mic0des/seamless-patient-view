@@ -132,6 +132,7 @@ h1 {
 body::-webkit-scrollbar {
     background-color: #fff;
     width: 16px;
+    height: 4px;
 }
 
 /* background of the scrollbar except button or resizer */
@@ -150,3 +151,4 @@ body::-webkit-scrollbar-thumb {
 body::-webkit-scrollbar-button {
     display:none;
 }
+
