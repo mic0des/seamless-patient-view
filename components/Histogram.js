@@ -51,6 +51,12 @@ const Histogram = ({ data, xAccessor, label }) => {
 
   return (
     <div className="Histogram" ref={ref}>
+      { 
+        displayObject ? 
+        <Tooltip displayObj={displayObject}/> 
+         :
+        null
+      }
       <Chart dimensions={dimensions}>
         <defs>
           <Gradient
@@ -86,12 +92,6 @@ const Histogram = ({ data, xAccessor, label }) => {
           style={{fill: `url(#${gradientId})`}}
         />
       </Chart>
-      { 
-        // displayObject ? 
-        <Tooltip displayObj={displayObject}/> 
-        //  :
-        // null
-      }
     </div>
 
   )

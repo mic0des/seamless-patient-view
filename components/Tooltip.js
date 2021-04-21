@@ -1,6 +1,6 @@
 export default function Tooltip({displayObj}) {
     return (
-        <div className="tooltip" style={{opacity: 1, position: 'absolute', left: `${displayObj ? `${displayObj.dimensions.left + 23.5}em` : '23.5em'}`, top: `${displayObj ? `${displayObj.dimensions.top + 8}em` : '8em'}`}}>
+        <div className="tooltip" style={{opacity: 1, position: 'absolute', left: `${displayObj ? `${displayObj.dimensions.left + 3.1}em` : '3.1em'}`, top: `${displayObj ? `${displayObj.dimensions.top + -1.2}em` : '-1.2em'}`}}>
             <div className="tooltip-range">
                 Patient Ages
             </div>
